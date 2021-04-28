@@ -1,0 +1,4 @@
+{
+    "SASL_SCRAM_512_AUTH": "arn:aws:secretsmanager:us-east-1:01234567890:secret:MyBrokerSecretName",
+    "KAFKA_SERVER": "https://localhost:9092"
+}

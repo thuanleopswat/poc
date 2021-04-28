@@ -1,0 +1,128 @@
+/*
+Check http://eslint.org/docs/rules/ to see what rules are enabled due to 'eslint:recommended'
+and what rules can be auto-fixed
+*/
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "security"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:security/recommended"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "curly": "error",
+        "camelcase": [
+            "error",
+            {
+                "properties": "never"
+            }
+        ],
+        "no-else-return": "warn",
+        "no-var": "warn",
+        "keyword-spacing": "warn",
+        "comma-spacing": "warn",
+        "array-bracket-spacing": "warn",
+        "arrow-spacing": "warn",
+        "block-spacing": "warn",
+        "computed-property-spacing": "warn",
+        "require-atomic-updates": "off",
+        "generator-star-spacing": [
+            "warn",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "space-infix-ops": [
+            "error",
+            {
+                "int32Hint": false
+            }
+        ],
+        "security/detect-object-injection": "off",
+        "detect-non-literal-fs-filename": "off",
+        "detect-unsafe-regex": "off",
+        "key-spacing": "warn",
+        "no-console": "off",
+        "no-useless-catch": "warn",
+        "no-useless-escape": "warn",
+        "no-async-promise-executor": "warn",
+        "eqeqeq": [
+            "off" /*,"smart"*/
+        ],
+        "no-multi-spaces": "error"
+    },
+    "globals": {
+        "__base": true,
+        "__testsWorkerPath": true,
+        "__config": true,
+        "__counters": true,
+        "__data": true,
+        "debug": true,
+        "ERROR": true,
+        "logInfo": true,
+        "LOADED": true,
+        "LOADED_WORKER": true,
+        "QUEUE": true,
+        "RestErrorHandler": true,
+        "ClientError": true,
+        "WorkerError": true,
+        "CommonError": true,
+        "UnexpectedError": true,
+        "MongoValidationError": true,
+        "lowWorker": true,
+        //TEST globals
+        "jasmine": true,
+        "describe": true,
+        "xdescribe": true,
+        "it": true,
+        "fit": true,
+        "xit": true,
+        "fdescribe": true,
+        "beforeAll": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "afterAll": true,
+        "expect": true,
+        "__apikey": true,
+        "__apikey_partner": true,
+        "__apikey_partner_2": true,
+        "__apikey_shared": true,
+        "__apikey_paid": true,
+        "__apikey_free": true,
+        "__apikey_force_private": true,
+        "__apikey_paid_force_private": true,
+        "__testApikeys": true,
+        "__apikey_exception": true,
+        "__testBase": true,
+        "__testsResources": true
+    }
+}
